@@ -1,0 +1,35 @@
+#N canvas 103 23 1031 660 10;
+#X obj 403 380 readsf~;
+#X obj 405 504 dac~;
+#X obj 595 238 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 111 277 0;
+#X msg 401 147 open atomssamplefinal.wav \, 1;
+#X text 445 503 El objeto dac~ es la conexión entre Pure Data y la
+tarjeta de sonido de la computadora. Este elemento es necesario para
+poder escuchar el audio de nuestra programación \, sin él los datos
+que trabaja PD permanecerían puros números dentro del mismo programa.
+Solamente cuando lleguen a la tarjeta de sonido \, que es un componente
+físico de la computadora \, se transforman en señales que después
+pueden ser emitidos por los altavoces. Resumido de una forma muy simple
+podemos decir que el dac~ es la puerta por donde sale el sonido de
+PD para que la computadora y la periferia conectada lo reproduzca.
+;
+#X text 142 278 Este mensaje detiene el loop generado.;
+#X text 402 29 "Simple Looper";
+#X text 618 232 Este Bang tiene su entrada conectada a la salida del
+obejto readsf~ y su salida al objeto open atomssamplefinal.wav \, 1
+Con esto se genera el loop que se reproduce infinitamente.;
+#X text 397 87 Este mensaje llama el archivo de audio desde la carpeta
+contenedora y lo reproduce con el numero "1" (se recomienda tener el
+archivo de audio que se esta llamando en la misma carpeta donde se
+creo el patch).;
+#X text 460 377 El objeto readsf~ lee la señal de salida de un archivo
+de audio(en este caso el archivo de audio llamado atomssamplefinal.wav).
+;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 0 1 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
