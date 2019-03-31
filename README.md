@@ -14,4 +14,7 @@ Si analizamos los distintos dispositivos que existen en el mercado para generar 
 
 “Simple Looper” es un prototipo inicial que se pretende desarrollar con el tiempo. Se implementaran y especificaran distintas funciones de repetición con la intención de transformarlo en una herramienta de crossfading – loop la cual permitirá un ejercicio de repetición donde el punto de corte del sample que se esta repitiendo  no se manifieste (corte en el punto de fase X=0 Y=0) con al intención de generar una percepción auditiva de “continuidad”. Serian estas las primeras aproximaciones a la creación de sonidos continuos a partir de un sample para la creación de ambientes sonoros y atmosferas.
 
+La imposición comercial de las herramientas de looping que las empresas ofrecen a través de los software de pago (específicamente para este caso) desorientan la genuina y real necesidad estética inicial del proceso de creación de un dispositivo. En este contexto Pure data, es un software  que permite desarrollar esa idea inicial  sin  intervenciones comerciales que modelan de alguna manera la estética del resultado final tanto del dispositivo como de las ideas sonoras que se pretenden proyectar.
+
+
 por PP Mtrx.
